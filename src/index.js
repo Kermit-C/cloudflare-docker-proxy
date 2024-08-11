@@ -6,7 +6,9 @@ addEventListener("fetch", (event) => {
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
-  // production
+  "dockerhub.kermit.pro": dockerHub,
+  
+  // production examples
   "docker.libcuda.so": dockerHub,
   "quay.libcuda.so": "https://quay.io",
   "gcr.libcuda.so": "https://gcr.io",
@@ -16,7 +18,7 @@ const routes = {
   "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
   "ecr.libcuda.so": "https://public.ecr.aws",
 
-  // staging
+  // staging examples
   "docker-staging.libcuda.so": dockerHub,
 };
 
